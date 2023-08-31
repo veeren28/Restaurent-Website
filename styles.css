@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'Hind Guntur', sans-serif;
+    font-family: 'Lusitana', serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Poppins', sans-serif;
+list-style: none;
+text-decoration: none;
+scroll-behavior:smooth;
+}
+:root{
+    --main-color:#ff702a;
+    --text-color:#fff;
+  /*    --bg-color:#1e1c2a;  */
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+*::selection{
+    background: var(--main-color);
+    color: #fff;
+}
+.landing-page{
+    width: 100%;
+    height: 100vh;
+      color: var(--text-color);
+      /*  background: var(--bg-color); */
+background: url("fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai.jpg");
+/* background-size: cover; */
+background-size:  110% ,120vh ;
+background-repeat: no-repeat;
+overflow: hidden;}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 130px 170px;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+ .logo{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+ }
+ .landing-page .navbar{
+    overflow: hidden;
+ }
+ .navbar{
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+
+    
+ }
+ .navbar a{
+   /*  position: fixed; */
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+ }
+ .navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
+ }
+ #menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+ }
+ section{
+    padding: 70px 17%;
+ }
+ .home{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1 fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+ }
+
+ .home span{
+    font-size: 2rem;
+    font-weight: bold;  
+  
+ }
+
+ .home-text h1{
+    font-size: var(--big-font);
+    color: var(--main-color);
+}
+.home-text h2{
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+    font-display:inherit;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    transform: scale(1.2) translateY(10px);
+transition: .4s;
+}
+.second-page{
+    position: relative;
+    background: #1e1c2a;
+}
+.about-img img{
+
+    max-width: 100%;
+    width:480px ;
+    height: auto;
+}
+
+ .about{
+    background: #1e1c2a;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap:1.5rem;
+    align-items: center;
+    color: #fff;
+}
+.about-text span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+.about-text h2{
+    font-size: var(--h2-font);
+}
+.about-text p{
+    margin: 0.8rem 0 1.8rem;
+line-height: 1.7;
+}
+.second-page{
+    height:500vh;
+    background: #1e1c2a;
+}
+
+.menu-container img{
+
+    max-width: 100%;
+    width:250px;
+    height: 250px;
+    border-radius: 5%;
+}
+.menu .heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.heading span{
+    color:#ff702a;
+    font-weight: 600;
+}
+.heading h2{
+    font-size: var(--h2-font);
+    color: #fff;
+    }
+    .menu-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+        grid-gap: 1.5rem;
+        align-items: center;
+    }
+    .box{
+        color: #fff;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        justify-content: center;
+        background-color: #feeee9;
+        padding: 20px;
+        border-radius: 0.5rem;
+    }
+.box img{
+    width: 220px;
+    height: 220px;
+}
+    .box-img img{
+        width: 100%;
+        height:100%;
+    }
+    .box h2{
+        font-size: 1.3rem;
+        color:#ff702a ;
+    }
+    .box h3{
+        color: var(--bg-color);
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 4px 0 10px;
+    }
+    .box span{
+        color: var(--main-color);
+        font-size: var(--p-font);
+    font-weight: 600;
+    }
+  .menu-container .box .cart{
+        background: var(--main-color);
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 20px;
+        padding: 7px 10px;
+        border-radius: 0 0.5rem 0 0.5rem;
+    }
+    .service-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px, auto));
+        grid-gap: 1.5rem;
+        margin-top: 4rem;
+
+    }
+    .s-box{
+        text-align: center;
+        padding: 20px 30px;
+
+    }
+    .s-box img{
+        width: 90px;
+    }
+    
+    .s-box h3{
+        margin: 4px 0 10px;
+        color: var(--main-color);
+        font-size: 1.2rem;
+    }
+    .s-box p{
+        line-height: 1.7;
+        color: #fff;
+    }
+    .cta{
+        background:#feeee9 ;
+        padding: 70px 0;
+        text-align: center;
+        width: 66%;
+        margin: 100px auto;
+        border-radius: 10px;
+    }
+    .cta section{
+        background: #1e1c2a;
+    }
+    .cta h2{
+        font-size: 2rem;
+        color: var(--bg-color);
+        margin-bottom: 30px;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+     
+    }
+  .col{
+       margin-left: 100px;
+    }
+    .footer{
+        padding: 10px 0px; 
+    }
+    col{
+        width: 25%;
+    }
+    .col h4{
+         font-size: 1.2rem;
+         color: var(--text-color);
+         margin-bottom: 25px;
+         position: relative;
+    } 
+    .col h4::before{
+        content: "";    
+        position: relative;
+        width: 2px;
+        height: 50px;
+        left: 0;
+        bottom: -8px;
+        background: var(--main-color);
+
+    }
+    .col ul li a{
+        color: #9897a9;
+        font-size: 1.1rem;
+        display: block;
+        text-transform: capitalize;
+        transform: .4s;
+    }
+    .col ul li a{
+        color: var(--main-color);
+        transform: translateX(-12px);
+    }
+    .col .social a{
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+margin-bottom: 10px;
+
+    }
+    .col .social a :hover{
+        font-size: 1.2rem;
+        color: var(--main-color);
+        transition: 0.4s;
+    }
+    @media (max-width: 1140px ){
+        section{
+            padding: 50px 8%;
+        }
+      
+        header .navbar{
+            position: absolute;
+            top:-400px;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: #2b2640;
+            transition: 3s;
+        }
+        header .navbar .active{
+            top: 70px;
+        }
+        .navbar a{
+            padding: 1.5rem;
+            display: block;
+        }
+        body{
+            background-size:110% ,100%;
+        }
+        .col{
+width: 50%;
+margin-bottom: 10px;
+        }
+    }
+    @media(max-width:720px) {
+        header{
+            padding: 10px 16px;
+
+        }
+        .home{
+            grid-template-columns: 1fr;
+            text-align: center;
+
+        }
+        body{
+            /* background-size: cover; */background: url("fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai.jpg");
+            background-size:auto;
+            background-repeat: no-repeat;
+        }
+        .second-page{
+            height: max-content;
+        }
+        .about{
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        .about-img{
+            order: 2;
+        }
+        section{
+            padding: 100px 7%;
+        }
+        
+    }
+    @media (max-width: 540px){
+        .col{
+           width: 100%; 
+        }
+    }
